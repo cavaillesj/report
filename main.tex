@@ -177,6 +177,21 @@ Jérôme Cavaillès
 
 
 \newpage
+\section*{Personal origin}
+
+\paragraph{}
+I did a 6-month internship at CNRS in an ecology station. I have choose this internship because it was for me an opportunity to applied numerical modelling to ecology. A particularity of the team I integrated (cbtm) is to bridge the gap between theoretic and experimental ecology. I used my background in mathematical modelling to study the effect of destabilising of controlling an ecosystem behavior.
+
+
+\paragraph{}
+I have choose to applied mathematics to ecology for mainly two reasons. The first one is for personal conviction. Indeed, because ecology is facing more and more disturbance, I think it is important to understand how ecosystem behavior react to it. The second one is by scientific curiosity about complex system. I have done several online courses \footnote{https://www.linkedin.com/in/jeromecavailles/} about it, and  I wanted to study a field where the dynamics are nonlinear and non intuitive.
+
+
+
+
+
+
+\newpage
 %\todo{Choice of this internship ?}
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
@@ -620,7 +635,8 @@ More generally, even if the maximum of the collapse probability is under estimat
 
 
 \paragraph{}
-In this study, we focus on two measures: variability and collapse probability. However as detailed in the introduction, several different notions of \hyperref[stability_litterature]{stability} are often considered in the literature. %These different aspects of stability are briefly presented in  \hyperref[stability_others]{appendix}.
+In this study, we focus on two measures: variability and collapse probability. However as detailed in the introduction, several different notions of \hyperref[stability_litterature]{stability} are often considered in the literature. Other measures relative to the literature about early warning signal are presented in appendix \ref{stability_others}.
+%These different aspects of stability are briefly presented in  \hyperref[stability_others]{appendix}.
 
 \subsection{Classification of dynamical behaviour}
 
@@ -912,7 +928,7 @@ For some sets of parameter, the system is certain to collapse. Of course, this o
 
 %\todo{préciser que le temps d'étude n'est pas tjrs suffisant pour le constater}
 \paragraph{Accumulation - Possible collapse \\} % between
-Between these two extremes cases, there exists a range of parameters when a collapse may occur (Fig. \ref{caseapc}). This happens when $W$ is high enough and also when the actual strength of the fire sufficiently large. We could remark that this case depends greatly on the final simulation time used, because, while this system is able to collapse, its needs a strong enough fire which is not common. In other words, for a longer time study, the system will have more risk of collapse, because the probability to have a strong fire would be higher.
+Between these two extremes cases, there exists a range of parameters when a collapse may occur (Fig. \ref{fig:caseapc}). This happens when $W$ is high enough and also when the actual strength of the fire sufficiently large. We could remark that this case depends greatly on the final simulation time used, because, while this system is able to collapse, its needs a strong enough fire which is not common. In other words, for a longer time study, the system will have more risk of collapse, because the probability to have a strong fire would be higher.
 
 \begin{figure}[h!]
 \centering
@@ -926,7 +942,7 @@ Between these two extremes cases, there exists a range of parameters when a coll
 %%%%%%%%%%%%%%%%%%  \todo{... link with cp (but after) ... } 
 
 \paragraph{Depletion \\}
-When $W$ is always low, a collapse is highly unlikely. In practice, we can observe a collapse only when the set of parameter is close to the cases of \textit{Fluctuation}. Is is then that $W$ can get to higher enough values to generate a substantial fire, but this is rarely observed. In Fig. \ref{cased} we can observe that $W$ comes back to $0$ with each fire and does not have time to accumulate, and thus lead to a strong fire.
+When $W$ is always low, a collapse is highly unlikely. In practice, we can observe a collapse only when the set of parameter is close to the cases of \textit{Fluctuation}. Is is then that $W$ can get to higher enough values to generate a substantial fire, but this is rarely observed. In Fig. \ref{fig:cased} we can observe that $W$ comes back to $0$ with each fire and does not have time to accumulate, and thus lead to a strong fire.
 %\todo{jamais collapse, expliquer pourquoi avec un très simple calcul}
 %\todo{nuancer dans le cas ou on est proche du cas "equivalence" and fuel is not always low enough}
 
@@ -953,9 +969,9 @@ When $AB$ is close enough to the limit with the case \textit{Depletion}, we coul
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=5.5cm]{equivalent_high_1.png}
-\includegraphics[width=5.5cm]{equivalent_high_3.png} \\
-\includegraphics[width=5.5cm]{equivalent_high_2.png}
+\includegraphics[width=5cm]{equivalent_high_1.png}
+\includegraphics[width=5cm]{equivalent_high_3.png} \\
+\includegraphics[width=5cm]{equivalent_high_2.png}
 \caption{Time series for different parameter sets corresponding to the case: \textit{Fluctuation}, but close to \textit{Depletion}.}
 \label{fig:casefbyd}
 \end{figure}
@@ -1033,7 +1049,7 @@ If we start with a fluctuation case for low frequencies, as in Fig. \ref{fig:vcp
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=9cm]{results/measures_fluctu_unlikely.png} \\
+\includegraphics[width=8cm]{results/measures_fluctu_unlikely.png} \\
 \end{center}
 \caption{\label{fig:vcp2}Variability and collapse probability as a function of fire frequency for the dynamical cases: Fluctuation - Unlikely collapse.}
 \end{figure}
@@ -1050,7 +1066,7 @@ When frequency is high enough, $AB$ take high values, and the fuel is constraine
 
 
 \paragraph{}
-For the two dynamical cases \textit{accumulation - possible collapse} and \textit{accumulation - inevitable collapse} both variability and collapse probability are increasing (Fig. \ref{vcp4}). To clarify, even in the dynamical case \textit{Accumulation - Inevitable collapse} the collapse probability could be low because there isn't enough fire in the time study to have a substantial risk of system collapse.
+For the two dynamical cases \textit{accumulation - possible collapse} and \textit{accumulation - inevitable collapse} both variability and collapse probability are increasing (Fig. \ref{fig:vcp4}). To clarify, even in the dynamical case \textit{Accumulation - Inevitable collapse} the collapse probability could be low because there isn't enough fire in the time study to have a substantial risk of system collapse.
 
 \begin{figure}[h!]
 \begin{center}
@@ -1062,7 +1078,7 @@ For the two dynamical cases \textit{accumulation - possible collapse} and \texti
 \end{figure}
 
 \paragraph{}
-For the two dynamical cases \textit{Fluctuation - Possible collapse} and \textit{Fluctuation - Inevitable collapse}, both variability and collapse probability first increase and later decrease at higher frequencies (Fig. \ref{vcp5}). 
+For the two dynamical cases \textit{Fluctuation - Possible collapse} and \textit{Fluctuation - Inevitable collapse}, both variability and collapse probability first increase and later decrease at higher frequencies (Fig. \ref{fig:vcp5}). 
 
 \begin{figure}[h!]
 \begin{center}
@@ -1321,6 +1337,19 @@ In the specific context of forest-fire dynamics, we show that the notion that fo
 
 %\paragraph{}
 %Talk about a more general / different problem ...
+
+
+
+\newpage
+\addcontentsline{toc}{section}{Personal reviews}
+\section*{Personal reviews}
+
+
+\paragraph{}
+During this internship, I have familiarise myself with  the research methodology. I had to make assumptions, to validate it, to link different phenomena with literature. I improve my skill in numerical modelling, notably in python. Finally, I learned to write scientific document.
+
+\paragraph{}
+If I have choose this internship notably because it was an opportunity to contribute to ecological dynamics understanding, I realise during this internship that even if it remain a lot of phenomena to study, literature about human impact is already substantial. In particular, the great impact from Human to ecological system is established, however Human society do not react seriously. It is why I would like to pursue my career in mathematics applied to sociology.
 
 
 
@@ -1935,7 +1964,52 @@ In order to respect this threshold, we can simply redefine $\lambda$ as
 \]
 
 
+\paragraph{}
+Other estimation of $\lambda$ have been constructed and implemented. A first approximation is to simply consider the average of the perturbation : 
+\[
+\begin{array}{rcl}
+\lambda_{simple} & = & s(N^*+\alpha W^*)
+\end{array}
+\]
+But this approximation overestimate the variability. Indeed, the rough approximation do not take into account one aspect of the fire model. The point is that when no fuel is present the fire stop. This implies that the actual average of the strength is lower than $s$.
 
+\paragraph{}
+A better way could be to integrate the severity of the fire over the possible (when fuel is present) values of the strength.
+Thus, we have to integrate between $0$ and $\frac{W^*}{\beta(N^*+\alpha W^*)}$.
+\[
+\begin{array}{rcl}
+\lambda_{integrate} & = & \int_0^{\frac{W^*}{\beta(N^*+\alpha W^*)}} \frac{x}{s}\exp(-\frac{x}{s})(N^*+\alpha W^*)dx \\
+& = & (N^*+\alpha W^*)([-x\exp(-\frac{x}{s})]_0^{\frac{W^*}{\beta(N^*+\alpha W^*)}} +  \int_0^{\frac{W^*}{\beta(N^*+\alpha W^*)}} \exp(-\frac{x}{s})dx) \\
+& = & (N^*+\alpha W^*)([-x\exp(-\frac{x}{s})]_0^{\frac{W^*}{\beta(N^*+\alpha W^*)}} +  [ -s\exp(-\frac{x}{s})]_0^{\frac{W^*}{\beta(N^*+\alpha W^*)}}) \\
+\lambda_{integrate} & = & (N^*+\alpha W^*)(-\frac{W^*}{\beta(N^*+\alpha W^*)}\exp(-\frac{W^*}{s\beta(N^*+\alpha W^*)}) - s(\exp(-\frac{W^*}{s\beta(N^*+\alpha W^*)})-1)) \\
+\end{array}
+\]
+We can check that when $\frac{W^*}{s\beta(N^*+\alpha W^*)}$ is high enough (in other word, when the problem of the presence of fuel to maintain the fire is not relevant), we have again $\lambda & = & s(N^*+\alpha W^*)$.
+
+
+\paragraph{}
+We can see on the figure \ref{fig:var_1} that the variability could be well estimated. Also, we observe that the simple estimation overestimate the variability.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=12cm]{variability_1.png}
+\caption{Estimation and measures of the variability}
+\label{fig:var_1}
+\end{figure}
+
+
+\newpage
+\paragraph{}
+Of course, the precision of this estimation depend greatly to the parameters region. For example, on the figure 3, we can see that the approximation is less accurate. The simple estimation severely overestimate the variability, and tend to predict the peak for lower frequency than measures. On the contrary, the estimation using a reformulation of the integration under estimate the variability. However, the estimation with a threshold to the strength of the fire behave quite well, even if the variability is over estimated, and a roughness appears (the function is less smooth) the location of the peak is always quite well predicted.
+
+This observations can be generalised. When the total severity of the fire is high, the accuracy of the estimation decreases. In practice, the product of the parameter $s.\alpha.\beta$ give an interesting clue of the precision of the variability estimation.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=12cm]{variability_2.png}
+\caption{Estimation and measures of the variability}
+%\label{fig:universe}
+\end{figure}
 
 
 \newpage
@@ -1956,18 +2030,179 @@ cp1 &=& (N^*+\alpha W^*)((N^*-a+s)\exp(-\frac{N^*-a}{s}) - (\frac{W^*}{\beta}+s)
 \end{array}
 \]
 
+\paragraph{}
+Another way to estimate this probability is by using the estimation of $N^*$ and $W^*$ and deducing the risk to go below the Allee threshold effect (which is $A$). %\todo{} 
+% Here we consider that the severity s(N^*+\alpha W^*) follow an exponential distribution
+% np.exp(-1./strength*(N_star-a)/(N_star+alpha*W_star))
+\[
+\begin{array}{rcl}
+cp1 & = & \int_{N^*-A}^{\infty} s(N^*+\alpha W^*) \\
+cp1 & = & \exp(-\frac{N^*-A}{s(N^*+\alpha W^*)}) \\
+\end{array}
+\]
+Also, as previously for the variability, the need of fuel to maintain a fire impose certain value for the value of the two biomass. But, because considering $N$ and $W$ as constant equal to $N^*$ (and respectively $W^*$) would be too rough, we model then by a Normal variable with $N^*$ (and respectively $W^*$) for the mean, and we estimate the standard deviation by using an estimation of the variability (see previously).
+\[
+\begin{array}{rcl}
+N_{sd}^* & = & \sqrt{Variability} \\
+W_{sd}^* & = & \sqrt{f\frac{(\beta \lambda)^2}{m}}
+\end{array}
+\]
+The derivation of $W_{sd}^*$ use the same process than the calculus of $N_{sd}^*$. The perturbation is here $\beta \lambda$ instead of simply $\lambda$ and $U$ the growth rate at the equilibrium is $m$ instead of $1-A$. The main argument of this point is that, in practice $W$ varies a lot, and considering only the average of $W$ could affect the dynamics of the system. We denote $atc$ the ability to collapse.
+\[
+atc = P(W > \beta s (N+\alpha W))
+\]
+%\todo{$proba_able_to_collapse$}
+\\
+Finally, the probability to collapse in the time study is 
+\[
+\begin{array}{rcl}
+cp & = & 1-(1-cp1.atc)^{fT}
+\end{array}
+\]
 
 
 
+
+
+\paragraph{}
+\\
+A direct way to compute the collapse probability and considering the threshold effect (the need of fuel to maintain a fire) is by using the following formula (the calculus is similar that for the variability).
+\[
+\begin{array}{rcl}
+cp1fire &=& \int_{N^*-a}^{\frac{W^*}{\beta}}s(x)(N^*+\alpha W^*)dx \\
+&=& \int_{N^*-a}^{\frac{W^*}{\beta}} \frac{x}{s}\exp(-\frac{x}{s})(N^*+\alpha W^*)dx \\
+&=& (N^*+\alpha W^*)([-x\exp(-\frac{x}{s})]_{N^*-a}^{\frac{W^*}{\beta}} +  [ -s\exp(-\frac{x}{s})]_{N^*-a}^{\frac{W^*}{\beta}}) \\
+&=& (N^*+\alpha W^*)((N^*-a)\exp(-\frac{N^*-a}{s}) - \frac{W^*}{\beta}\exp(-\frac{W^*}{s\beta}) + s(\exp(-\frac{N^*-a}{s})- \exp(-\frac{W^*}{s\beta})) \\
+&=& (N^*+\alpha W^*)((N^*-a+s)\exp(-\frac{N^*-a}{s}) - (\frac{W^*}{\beta}+s)\exp(-\frac{W^*}{s\beta}) \\
+\end{array}
+\]
+
+
+
+\paragraph{}
+Except the assumptions and approximation discuss in the previous section, it remain manly two choice. The first one is the choice of the variability used to estimate the standard deviations of $N$ and $W$. We recall that we have $3$ choice (simple, threshold and integrate).
+
+\paragraph{}
+We can see below that the collapse probability is well estimated, and more surprising, the choice of the variability do not affect the estimation. More generally, the 3 estimations are most of the time similar. The main difference appear between the estimation using the "variability threshold" and the others two. For example on the figure \ref{fig:cp_est_comparaison}, we can see the effect of the threshold. Also, no estimation are significantly better than another one.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=12cm]{cp.png}
+\caption{Collapse probability estimation}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=12cm]{cp_threshold.png}
+\caption{Collapse probability estimation}
+\label{fig:cp_est_comparaison}
+\end{figure}
+
+
+\paragraph{}
+Also, when we compute the ability to collapse, we have model $N$ and $W$ as Normal variable. But, if we can model them as constant, it appear than it is enough to consider only $W$ as a Normal variable. That seems reasonable is the sense that the variation of $N$ is lower than the variation of $W$. 
+
+\begin{figure}[h!]
+\includegraphics[width=6cm]{cp_gauss_1.png}
+\includegraphics[width=6cm]{cp_gauss_2.png}
+\caption{Collapse probability estimation}
+%\label{fig:universe}
+\end{figure}
+
+
+\paragraph{}
+More generally, even if the maximum of the collapse probability is under estimated, the location of the peak is quite well predicted. As previously, the biases increase with the severity of the fire.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\newpage
-%\section{Stability}
+\section{Early warnings signals}
 %\subsection{stability others}
-%\label{stability_others}
-%\todo{talk about others "measures of stability" such as skewness, kurtosis ... }
+\label{stability_others}
+
+\paragraph{}
+We present here three methods to detect early warning signals : \textit{skewness}, \textit{kurtosis} and \textit{coefficient of variation}.
 
 
-%\subsection{General notions of stability}
-%\todo{Talk about the general concept of stability (across the different disciplines)}
+\subsection{Skewness}
+
+\paragraph{}
+Skewness is useful to measure the asymmetries of a series. It is define like the standardised third moment (around the mean).
+\[
+\begin{array}{rcl}
+skewness & = & \mathbf{E}((\frac{X-\mu}{\sigma})^3) \\
+%\gamma_1 & = & 
+\end{array}
+\]
+
+\paragraph{}
+Skewness has been used a lot as an early warning signal \citep{biggs_turning_2009, guttal_changing_2008, dakos_flickering_2013, brock_interacting_2010, takimoto_early_2009, fung_warning_2013, guttal_spatial_2009}. The idea is that when the dynamics go close enough to a boundary, this dynamics slow \citep{scheffer2009early} and so the time series 
+have more value for this side.
+
+
+\paragraph{} % result & methods
+The behaviour of skewness is always the same : almost proportional to the perturbations (product of frequency and strength). The value of the collapse probability do not changed really the shape of skewness
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=6cm]{skewness1b.png}
+\includegraphics[width=6cm]{skewness2b.png}
+\caption{skewness}
+%\label{fig:universe}
+\end{figure}
+
+
+
+\subsection{Kurtosis}
+
+\paragraph{}
+Comparable to the precedent method, kurtosis is a measure of the "tailedness" of a series. Like skewness, it measure the shape of a distribution.
+
+\[
+\begin{array}{rcl}
+kurtosis & = & \mathbf{E}((\frac{X-\mu}{\sigma})^4) \\
+%\gamma_1 & = & 
+\end{array}
+\]
+
+The argument is quite the same as previously, the series take more extreme value when the dynamics is close to boundaries (where this is slower) and also when the dynamics change of basin of attraction (which is not the case here, because changing of basin is equivalent to collapse in our model) \citep{biggs2009turning}
+
+
+\paragraph{} % result & methods
+Again, the global shape of kurtosis is always the same, kurtosis decrease with frequency. But here, the magnitude do not change with the strength of the fire. Kurtosis take always values from $6$ to $0$. Usually, the kurtosis (like the three measures exposed here) should increase with the risk of collapse.
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=6cm]{kurtosis2b.png}
+\includegraphics[width=6cm]{kurtosis1b.png}
+\caption{kurtosis}
+%\label{fig:universe}
+\end{figure}
+
+
+
+\subsection{Coefficient of variation}
+
+
+\paragraph{}
+It have been argued that variability could depend mainly on average. It make sense because if the average is low, the variability is lock to low value too \citep{contamin_indicators_2009, fung_warning_2013, wang_early_2018, baggio_optimal_2016, beninca_resonance_2011}. That is way, we test the coefficient of variability defined as follow :
+\[
+\text{Coefficient\ of\ variation} = \frac{variability}{mean}
+\]
+    
+\paragraph{}
+On the following example, we can check that the coefficient of variation have always a peak. Also, this one occur at the same location than the peak of collapse probability (when it exists).
+    
+\begin{figure}[h!]
+\centering
+\includegraphics[width=6cm]{coef1c.png} 
+\includegraphics[width=6cm]{coef3c.png} 
+\caption{coefficient of variability}
+%\label{fig:universe}
+\end{figure}
 
 
 
